@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/6faef4fc76.js" crossorigin="anonymous"></script>
+      <title>TOP: Admin Dashboard</title>
+   </head>
+   <body>
+      <div class="sidebar">
+         <div class="logo-container">
+            <img src="images/AMF.png" alt="logo">
+         </div>
+
+         <nav class="sidebar-nav">
+            <ul>
+               <li>
+                  <i class="fa-solid fa-chart-pie"></i>
+                  <p>Overall Charts</p>
+               </li>
+               <li>
+                  <i class="fa-solid fa-ticket"></i>
+                  <p>Initialize Wafer Projects</p>
+               </li>
+               <li>
+                  <i class="fa-solid fa-microchip"></i>
+                  <p>Wafer Workorders</p>
+               </li>
+               <li>
+                  <i class="fa-solid fa-cogs"></i>
+                  <p>Equipment</p>
+               </li>
+               <li>
+                  <i class="fa-solid fa-bars"></i>
+                  <p>Metrology</p>
+               </li>
+               <li>
+                  <i class="fa-solid fa-book"></i>
+                  <p>Reports</p>
+               </li>
+               
+            </ul>
+
+            <ul>
+               <li>
+                  <i class="fa-solid fa-gear"></i>
+                  <p>Setting</p>
+               </li>
+               <li>
+                  <i class="fa-solid fa-users"></i>
+                  <p>Feedback</p>
+               </li>
+            </ul>
+         </nav>
+         <div class="fill-bottom"></div>
+      </div>
+
+      <main>
+         <header class="header">
+            <h1>Overview</h1>
+            <div class="user">
+               <div class="icons">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <i class="fa-solid fa-bell"></i>
+               </div>
+               <p class="name">ILoveSemicon</p>
+               <div class="user-img">
+                  <img src="images/bear2.jpg" alt="user image" />
+               </div>
+            </div>
+         </header>
+   
+         <div class="info-cards">
+            <div class="info-card card1">
+               <p>Total Lots</p>
+               <p>2912</p>
+            </div>
+            <div class="info-card card2">
+               <p>Pending Release</p>
+               <p>69</p>
+            </div>
+            <div class="info-card card3">
+               <p>Currently Running</p>
+               <p>355</p>
+            </div>
+            <div class="info-card card4">
+               <p>Completed</p>
+               <p>2400</p>
+            </div>
+            <div class="info-card card5">
+               <p>Wafers Scrapped</p>
+               <p>88</p>
+            </div>
+
+         </div>
+   
+         <div class="trends-container">
+            <div class="trends">
+               <p class="trend-title">Total Wafer Movement (Monthly)</p>
+               <img src="images/chart2.svg" alt="chart">
+            </div>
+            <div class="data-container">
+               <div class="data-item">
+                  <p>Moves for Today</p>
+                  <p>69</p>
+               </div>
+               <div class="data-item">
+                  <p>Current Lots On Hold</p>
+                  <p>29</p>
+               </div>
+               <div class="data-item">
+                  <p>Average Release Time</p>
+                  <p>24m</p>
+               </div>
+               <div class="data-item">
+                  <p>Overall Status</p>
+                  <p>Healthy</p>
+               </div>
+            </div>
+         </div>
+   
+         <div class="lg-cards">
+            <div class="lg-card">
+               <div class="card-header">
+                  <div class="card-title">
+                     <h2>Equipment Status</h2>
+                     <a href="#">View details</a>
+                  </div>
+                  <p>Category: <span>Tools</span></p>
+               </div>
+               <div>
+                  <p>Scope-01 down for maintenance till 2pm</p>
+                  <p class="lg-card-num">1234</p>
+               </div>
+               <div>
+                  <p>Server down, unable to transfer data</p>
+                  <p class="lg-card-num">1269</p>
+               </div>
+               <div>
+                  <p>Low on chemical supply for Lithography tool</p>
+                  <p class="lg-card-num">995</p>
+               </div>
+               <div>
+                  <p>DRSEM tool down, pending investigation result</p>
+                  <p class="lg-card-num">999</p>
+               </div>
+            </div>
+            <div class="lg-card">
+               <div class="card-header">
+                  <div class="card-title">
+                     <h2>Daily Fab Tasks</h2>
+                     <a href="#">View all</a>
+                  </div>
+                  <p>Week</p>
+               </div>
+               <div>
+                  <div class="checkbox-container">
+                     <div class="checkbox">
+                        <input type="checkbox" id="checkbox1">
+                        <label for="checkbox1"></label>
+                     </div>
+                     <p>Daily Ops Meeting/Scrum</p>
+                  </div>
+                  <p class="badge" style="background-color: #fec400; color: #fff;">Urgent</p>
+               </div>
+               <div>
+                  <div class="checkbox-container">
+                     <div class="checkbox">
+                        <input type="checkbox" id="checkbox2">
+                        <label for="checkbox2"></label>
+                     </div>
+                     <p>Meeting with equipment vendor</p>
+                  </div>
+                  <p class="badge" style="background-color: #29cc97; color: #fff;">In Progress</p>
+               </div>
+               <div>
+                  <div class="checkbox-container">
+                     <div class="checkbox">
+                        <input type="checkbox" id="checkbox3">
+                        <label for="checkbox3"></label>
+                     </div>
+                     <p>Update status on new Etch tool performance</p>
+                  </div>
+                  <p class="badge" style="background-color: #3751ff; color: #fff;">Pending</p>
+               </div>
+               <div>
+                  <div class="checkbox-container">
+                     <div class="checkbox">
+                        <input type="checkbox" id="checkbox4">
+                        <label for="checkbox4"></label>
+                     </div>
+                     <p>Do passdown report for next shift engineer</p>
+                  </div>
+                  <p class="badge" style="background-color: #3751ff; color: #fff;">Pending</p>
+               </div>
+            </div>
+         </div>
+      </main>
+   </body>
+</html>
