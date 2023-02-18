@@ -391,12 +391,19 @@ header > div {
 
 /* data container section */
 .data-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
    grid-column: 6 / -1;
    background: #fff;
    border: 2px solid #dfe0eb;
    border-top-right-radius: 0.5rem;
    border-bottom-right-radius: 0.5rem;
+}
 
+.status {
+   background-color: rgb(144, 238, 144, 0.3);
+   grid-template-rows: 2;
 }
 
 .data-item {
